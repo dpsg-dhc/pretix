@@ -8,5 +8,13 @@ RUN pip3 install pretix-cashpay
 RUN pip3 install pretix-printtool
 RUN pip3 install pretix-wirecard
 RUN pip3 install pretix-fontpack-free
+RUN pip3 install pretix-stretchgoals
+RUN pip3 install pretix-servicefees
+RUN pip3 install pretix-newsletter-ml
+RUN pip3 install pretix-cashpayment
+RUN pip3 install pretix-fontpack-free
+RUN pip3 install pretix-telephone
+
+
 USER pretixuser
 RUN cd /pretix/src && make production
